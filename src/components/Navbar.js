@@ -8,7 +8,6 @@ import DiscordButton from './DiscordButton'
 const StyledNavbar = styled.div`
   width: 100%;
   height: 70px;
-  position: absolute;
   top: 0;
   display: flex;
   align-items: center;
@@ -99,7 +98,8 @@ const Navbar = ({ onHero = true }) => {
       <StyledNavbar
         style={{ 
           backgroundColor: onHero ? 'rgba(0,0,0,0.5)' : '#252525',
-          transform: active ? `translateX(-300px)` : 'unset' 
+          transform: active ? `translateX(-300px)` : 'unset',
+          position: onHero ? 'absolute' : 'relative'
         }}
       >
         <Wrap>
