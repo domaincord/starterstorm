@@ -61,7 +61,7 @@ const Homepage = ({ data }) => {
 
   return (
     <BaseLayout isHome>
-      {posts.map(post => {
+      { posts ? posts.map(post => {
         return (
           <PostBit key={post.id}>
             <PostDate>{new Date(post.date).toLocaleDateString()}</PostDate>
@@ -72,7 +72,7 @@ const Homepage = ({ data }) => {
             <ReadButton to={`/blog/${post.slug}`}>Read More</ReadButton>
           </PostBit>
         )
-      })}
+      }) : null }
     </BaseLayout>
   )
 }

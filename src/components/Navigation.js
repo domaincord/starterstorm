@@ -66,7 +66,7 @@ const MenuLinks = () => (
       Home
     </Link>
     <Link to="/community-info" activeClassName="active">
-      Blog
+      Community Info
     </Link>
   </>
 )
