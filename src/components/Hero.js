@@ -7,14 +7,15 @@ const StyledHero = styled.div`
   width: 100%;
   height: 400px;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `
 
 const HeroText = styled.div`
   width: 100%;
-  position: absolute;
+  height: auto;
   display: block;
-  top: 50%;
-  transform: translateY(-50%);
   text-align: center;
   color: white;
 
@@ -27,6 +28,18 @@ const HeroText = styled.div`
   small {
     font-size: 1.25rem;
     font-weight: 300;
+  }
+
+  @media screen and (max-width: 1200px) {
+    width: 90%;
+
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    small {
+      font-size: 0.75rem;
+    }
   }
 `
 
