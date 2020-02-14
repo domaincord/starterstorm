@@ -8,24 +8,27 @@ function SEO({ description, lang, meta, title }) {
     graphql`
       {
         dataJson {
-            siteMetadata {
-                title
-                slogan
-                description
-                siteUrl
-                socialMedia {
-                    twitter
-                }
+          siteMetadata {
+            title
+            slogan
+            description
+            siteUrl
+            socialMedia {
+              twitter
             }
+          }
         }
-    } 
+      }
     `
   )
 
-  const site = dataJson;
+  const site = dataJson
   const metaDescription = description || site.siteMetadata.description
   const siteTitle = title || site.siteMetadata.title
-  const slogan = siteTitle === site.siteMetadata.title ? site.siteMetadata.slogan : site.siteMetadata.title;
+  const slogan =
+    siteTitle === site.siteMetadata.title
+      ? site.siteMetadata.slogan
+      : site.siteMetadata.title
 
   return (
     <Helmet

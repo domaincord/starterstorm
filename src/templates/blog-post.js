@@ -90,13 +90,13 @@ export const query = graphql`
           }
         }
         tags {
-            edges {
-                node {
-                    slug
-                    id
-                    name
-                }
+          edges {
+            node {
+              slug
+              id
+              name
             }
+          }
         }
         date
         content(format: RENDERED)

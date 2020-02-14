@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react'
 import styled from 'styled-components'
-import BaseLayout from "../components/layouts/BaseLayout";
-import { graphql, Link } from "gatsby";
+import BaseLayout from '../components/layouts/BaseLayout'
+import { graphql, Link } from 'gatsby'
 
 const PostBit = styled.article`
   width: 100%;
@@ -56,32 +56,31 @@ const ReadButton = styled(Link)`
 `
 
 const Homepage = ({ data }) => {
-  const posts = data.wordpress.posts.edges.map(edge => edge.node);
-  console.log(posts);
+  const posts = data.wordpress.posts.edges.map(edge => edge.node)
+  console.log(posts)
 
   return (
     <BaseLayout isHome>
-        {
-            posts.map(post => {
-
-                return (
-                    <PostBit key={post.id}>
-                        <PostDate>{new Date(post.date).toLocaleDateString()}</PostDate>
-                        <PostTitle>{post.title}</PostTitle>
-                        <PostContent dangerouslySetInnerHTML={{ __html: post.excerpt }}></PostContent>
-                        <ReadButton to={`/blog/${post.slug}`}>Read More</ReadButton>
-                    </PostBit>
-                )
-            })
-        }
+      {posts.map(post => {
+        return (
+          <PostBit key={post.id}>
+            <PostDate>{new Date(post.date).toLocaleDateString()}</PostDate>
+            <PostTitle>{post.title}</PostTitle>
+            <PostContent
+              dangerouslySetInnerHTML={{ __html: post.excerpt }}
+            ></PostContent>
+            <ReadButton to={`/blog/${post.slug}`}>Read More</ReadButton>
+          </PostBit>
+        )
+      })}
     </BaseLayout>
-  );
-};
+  )
+}
 
 export const query = graphql`
   {
     wordpress {
-      posts(where: {status: PUBLISH}) {
+      posts(where: { status: PUBLISH }) {
         edges {
           node {
             author {
@@ -119,6 +118,6 @@ export const query = graphql`
       }
     }
   }
-`;
+`
 
-export default Homepage;
+export default Homepage

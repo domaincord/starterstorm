@@ -1,3 +1,4 @@
+require('dotenv').config()
 const path = require('path')
 const slash = require('slash')
 const _ = require('lodash')
@@ -7,7 +8,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const result = await graphql(`
     {
       wordpress {
-        posts(where: {status: PUBLISH}) {
+        posts(where: { status: PUBLISH }) {
           edges {
             node {
               slug
