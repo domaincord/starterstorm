@@ -1,0 +1,19 @@
+[build]
+  publish = "public"
+  command = "npx gatsby build"
+  functions = "lambda"
+
+[[redirects]]
+  from = "/admin"
+  to = "https://cms.starterstorm.com/wp-login.php"
+  status = 301
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/discord"
+  to = "/api/discord/invite"
+  status = 301
