@@ -4,3 +4,5 @@
 lambda/
 public/
 node_modules/
+
+!src/lambda
