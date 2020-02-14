@@ -19,5 +19,5 @@
 
 [[redirects]]
   from = "/discord"
-  to = "/api/discord/invite"
+  to = "/api/invite"
   status = 301

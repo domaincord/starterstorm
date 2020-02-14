@@ -1,6 +1,6 @@
 import { Client } from 'discord.js'
 
-exports.handler = async function(event, context, callback) {
+exports.handler = async function(event, context) {
   const bot = new Client()
   await bot.login(process.env.GATSBY_BOT_TOKEN)
 
@@ -16,12 +16,12 @@ exports.handler = async function(event, context, callback) {
     'Generated an invite for a new user!'
   )
 
-  callback(null, {
+  return {
     statusCode: 301,
     headers: {
       Location: invite.url,
       'Cache-Control': 'no-cache',
     },
     body: JSON.stringify({ inviteCode: invite.code }),
-  })
+  }
 }
