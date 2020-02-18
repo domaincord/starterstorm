@@ -33,10 +33,6 @@ const NavGroup = styled.div`
   flex-flow: row nowrap;
   justify-content: flex-end;
   align-items: center;
-
-  .discord-cta {
-    margin-left: 25px;
-  }
 `
 
 const StyledDrawer = styled.div`

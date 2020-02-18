@@ -13,7 +13,7 @@ const StyledHero = styled.div`
 `
 
 const HeroText = styled.div`
-  width: 100%;
+  width: 60%;
   height: auto;
   display: block;
   text-align: center;
@@ -48,10 +48,10 @@ const Hero = () => {
     <StyledHero>
       <Navbar />
       <HeroText>
-        <h1>The Entrepreneur's Playground</h1>
+        <h1>Looking to promote your stuff?</h1>
         <small>
-          Discuss business strategies, network with other entrepreneurs, and
-          sell or promote your creative assets and services on Starter Storm.
+          <strong>Discuss</strong> business strategies, <strong>network</strong> with other entrepreneurs, and 
+          <strong> sell</strong> or <strong>promote</strong> your creative assets, services, and external communities.
         </small>
       </HeroText>
       <HeroImage />

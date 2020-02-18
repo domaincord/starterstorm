@@ -9,7 +9,8 @@ import './layout.css'
 const BaseLayout = ({ isHome, children }) => {
   return (
     <>
-      <SEO description="This community is for budding entrepreneurs to discuss startup ideas and get feedback on their projects as well as for creative members to sell, market, and advertise their products, sites, and services." />
+      <SEO description="Discuss business strategies, network with other entrepreneurs, and
+          sell or promote your creative assets, services, and external communities on Starter Storm." />
       {isHome ? <Hero /> : <Navbar onHero={false} />}
       <main className="page-wrapper">{children}</main>
     </>

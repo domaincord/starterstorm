@@ -6,3 +6,6 @@ public/
 node_modules/
 
 !src/lambda
+
+# Local Netlify folder
+.netlify
