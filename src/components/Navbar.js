@@ -1,4 +1,4 @@
-import React, {useContext} from 'react'
+import React, { useContext } from 'react'
 import { MenuProvider, MenuContext } from './MenuContext'
 import styled from 'styled-components'
 import Logo from './Logo'
@@ -82,7 +82,6 @@ const Stack = styled.div`
 `
 
 const Navbar = ({ onHero = true }) => {
-
   const { active, setActive } = useContext(MenuContext)
 
   const toggleDrawer = () => {
@@ -92,10 +91,10 @@ const Navbar = ({ onHero = true }) => {
   return (
     <MenuProvider>
       <StyledNavbar
-        style={{ 
+        style={{
           backgroundColor: onHero ? 'rgba(0,0,0,0.5)' : '#252525',
           transform: active ? `translateX(-300px)` : 'unset',
-          position: onHero ? 'absolute' : 'relative'
+          position: onHero ? 'absolute' : 'relative',
         }}
       >
         <Wrap>
@@ -103,11 +102,11 @@ const Navbar = ({ onHero = true }) => {
           <NavGroup>
             <NavLinks />
             <MenuButton role="button" onClick={toggleDrawer}>
-                <Stack>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </Stack>
+              <Stack>
+                <span></span>
+                <span></span>
+                <span></span>
+              </Stack>
             </MenuButton>
             <DiscordButton url="/discord" />
           </NavGroup>

@@ -50,8 +50,10 @@ const Hero = () => {
       <HeroText>
         <h1>Looking to promote your stuff?</h1>
         <small>
-          <strong>Discuss</strong> business strategies, <strong>network</strong> with other entrepreneurs, and 
-          <strong> sell</strong> or <strong>promote</strong> your creative assets, services, and external communities.
+          <strong>Discuss</strong> business strategies, <strong>network</strong>{' '}
+          with other entrepreneurs, and
+          <strong> sell</strong> or <strong>promote</strong> your creative
+          assets, services, and external communities.
         </small>
       </HeroText>
       <HeroImage />

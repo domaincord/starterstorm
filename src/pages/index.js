@@ -61,18 +61,20 @@ const Homepage = ({ data }) => {
 
   return (
     <BaseLayout isHome>
-      { posts ? posts.map(post => {
-        return (
-          <PostBit key={post.id}>
-            <PostDate>{new Date(post.date).toLocaleDateString()}</PostDate>
-            <PostTitle>{post.title}</PostTitle>
-            <PostContent
-              dangerouslySetInnerHTML={{ __html: post.excerpt }}
-            ></PostContent>
-            <ReadButton to={`/blog/${post.slug}`}>Read More</ReadButton>
-          </PostBit>
-        )
-      }) : null }
+      {posts
+        ? posts.map(post => {
+            return (
+              <PostBit key={post.id}>
+                <PostDate>{new Date(post.date).toLocaleDateString()}</PostDate>
+                <PostTitle>{post.title}</PostTitle>
+                <PostContent
+                  dangerouslySetInnerHTML={{ __html: post.excerpt }}
+                ></PostContent>
+                <ReadButton to={`/blog/${post.slug}`}>Read More</ReadButton>
+              </PostBit>
+            )
+          })
+        : null}
     </BaseLayout>
   )
 }
