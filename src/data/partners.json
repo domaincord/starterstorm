@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Domaincord",
+        "slug": "domaincord",
+        "tagline": "Find Your Brand",
+        "invite": "https://domaincord.com/invite",
+        "description": "Domaincord is proud to be the first and only Discord server centered around domain name investing. We take pride in offering unbiased, critical discussion and a safe, secure place to trade with other domain name investors.",
+        "features": [
+            "Drop catching filter command to filter expiring domain lists instantly according to criteria you specify",
+            "A marketplace channel to list your domain names for sale",
+            "Active, daily discussions centered around various aspects of the domain industry"
+        ]
+    },
+    {
+        "name": "Justin's Solution",
+        "slug": "justins-solution",
+        "tagline": "A Business & Community Discord Server",
+        "invite": "https://discord.gg/4PQqWeJ",
+        "description": null,
+        "features": [
+            "Graphic Design Services",
+            "Discord Server Setups and Reviews",
+            "Interactive Bots",
+            "Reaction Roles",
+            "Giveaways",
+            "100% SFW",
+            "And much more!"
+        ]
+    }
+]

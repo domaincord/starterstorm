@@ -68,6 +68,9 @@ const MenuLinks = () => (
     <Link to="/community-info" activeClassName="active">
       Community Info
     </Link>
+    <Link to="/partners" activeClassName="active">
+      Partners
+    </Link>
   </>
 )
 

@@ -16,7 +16,6 @@ const Button = styled.a`
   color: white;
   text-decoration: none;
   font-size: 0.75rem;
-  margin-right: 25px;
 
   img {
     width: 20px;
@@ -37,8 +36,8 @@ const Button = styled.a`
   }
 `
 
-const DiscordButton = ({ isSSO, url }) => (
-  <Button href={url} className="discord-cta">
+const DiscordButton = ({ isSSO, url, style }) => (
+  <Button style={style} href={url} className="discord-cta">
     <img src={discordLogo} alt="discord logo" />{' '}
     <span>{isSSO ? 'Sign in with Discord' : 'Join the Discord'}</span>
   </Button>
