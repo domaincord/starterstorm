@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import BaseLayout from '../components/layouts/BaseLayout'
+import { HomeLayout } from '../components/layouts'
 import { graphql, Link } from 'gatsby'
 
 const PostBit = styled.article`
@@ -57,10 +57,9 @@ const ReadButton = styled(Link)`
 
 const Homepage = ({ data }) => {
   const posts = data.wordpress.posts.edges.map(edge => edge.node)
-  console.log(posts)
 
   return (
-    <BaseLayout isHome>
+    <HomeLayout>
       {posts
         ? posts.map(post => {
             return (
@@ -75,7 +74,7 @@ const Homepage = ({ data }) => {
             )
           })
         : null}
-    </BaseLayout>
+    </HomeLayout>
   )
 }
 

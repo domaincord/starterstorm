@@ -7,6 +7,7 @@ module.exports = {
     ...data.siteMetadata,
   },
   plugins: [
+    `gatsby-plugin-postcss`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-styled-components`,

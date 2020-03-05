@@ -1,7 +1,6 @@
 import React from 'react'
-import { MenuProvider } from './src/components/MenuContext'
 
 const wrapRootElement = ({ element }) => {
-  return <MenuProvider>{element}</MenuProvider>
+  return <>{element}</>
 }
 export { wrapRootElement }
