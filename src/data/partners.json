@@ -3,7 +3,7 @@
         "name": "Domaincord",
         "slug": "domaincord",
         "tagline": "Find Your Brand",
-        "invite": "https://domaincord.com/invite",
+        "invite": "https://domaincord.com/discord",
         "description": "Domaincord is proud to be the first and only Discord server centered around domain name investing. We take pride in offering unbiased, critical discussion and a safe, secure place to trade with other domain name investors.",
         "features": [
             "Drop catching filter command to filter expiring domain lists instantly according to criteria you specify",
@@ -25,6 +25,21 @@
             "Giveaways",
             "100% SFW",
             "And much more!"
+        ]
+    },
+    {
+        "name": "Quibble",
+        "slug": "quibble",
+        "tagline": "An LGBT-Friendly Community",
+        "invite": "https://discord.gg/djRJfmX",
+        "description": "Open and relaxed server for everyone, whether you want to vent or just meet interesting new people! Join our LGBT friendly community for fun events, giveaways, earned roles and drinking nights.",
+        "features": [
+            "Game Nights",
+            "Trivia",
+            "Giveaways",
+            "Unique Emotes",
+            "Events",
+            "Friendly Staff Members"
         ]
     }
 ]
